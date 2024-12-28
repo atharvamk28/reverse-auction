@@ -37,13 +37,13 @@ A Solidity smart contract for a reverse auction.
 
 ## Example Input and Output
 1. Input:
-   numWinners: 2
-   maxBidAmount: 1 ETH
-   Bids: 
-        Account 1: 0.5 ETH
-        Account 2: 0.6 ETH
-        Account 3: 0.8 ETH
+   - numWinners: 2
+   - maxBidAmount: 1 ETH
+   - Bids: 
+        - Account 1: 0.5 ETH
+        - Account 2: 0.6 ETH
+        - Account 3: 0.8 ETH
 2. Output
-   Winning Bids: 0.5 ETH, 0.6 ETH
-   Rewards Distributed: 0.6 ETH to each winner.
-   Remaining funds returned to the creator.
+   - Winning Bids: 0.5 ETH, 0.6 ETH
+   - Rewards Distributed: 0.6 ETH to each winner.
+   - Remaining funds returned to the creator.
