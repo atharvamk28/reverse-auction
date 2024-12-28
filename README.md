@@ -23,17 +23,17 @@ A Solidity smart contract for a reverse auction.
    const auction = new web3.eth.Contract(abi, contractAddress);```
 
 2. Place a Bid:
-   await auction.methods.placeBid().send({
+   ```await auction.methods.placeBid().send({
     from: "YOUR_ACCOUNT_ADDRESS",
     value: web3.utils.toWei("0.5", "ether"),
-   });
+   });```
 
 3. End the Auction: 
-   await auction.methods.endAuction().send({ from: "YOUR_ACCOUNT_ADDRESS" });
+   `await auction.methods.endAuction().send({ from: "YOUR_ACCOUNT_ADDRESS" });`
 
 4. View Bids: 
-   const bids = await auction.methods.getBids().call();
-   console.log(bids);
+   ```const bids = await auction.methods.getBids().call();
+   console.log(bids);```
 
 ## Example Input and Output
 1. Input:
