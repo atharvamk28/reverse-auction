@@ -15,7 +15,8 @@ A Solidity smart contract for a reverse auction.
 
 ## Interacting with the Contract via Script or Frontend
 1. Import Web3 and the contract's ABI:
-   ```const Web3 = require("web3");
+   ```
+   const Web3 = require("web3");
    const abi = require("./build/contracts/ReverseAuction.json").abi;
 
    const web3 = new Web3("http://127.0.0.1:7545");
@@ -23,7 +24,8 @@ A Solidity smart contract for a reverse auction.
    const auction = new web3.eth.Contract(abi, contractAddress);```
 
 2. Place a Bid:
-   ```await auction.methods.placeBid().send({
+   ```
+   await auction.methods.placeBid().send({
     from: "YOUR_ACCOUNT_ADDRESS",
     value: web3.utils.toWei("0.5", "ether"),
    });```
@@ -32,7 +34,8 @@ A Solidity smart contract for a reverse auction.
    `await auction.methods.endAuction().send({ from: "YOUR_ACCOUNT_ADDRESS" });`
 
 4. View Bids: 
-   ```const bids = await auction.methods.getBids().call();
+   ```
+   const bids = await auction.methods.getBids().call();
    console.log(bids);```
 
 ## Example Input and Output
